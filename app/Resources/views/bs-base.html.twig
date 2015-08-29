@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>{% block title %}Bs{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap -->
+        <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" media="screen">
+{#        <link href="{{ asset('css/basic/body.css') }}" rel="stylesheet" media="screen">#}
+
+        
+{#       {% stylesheets '../app/Resources/less/parent/*' 
+                      '../app/Resources/less/pages/*'    
+                      
+                        output='css-compiled/parent-and-pages.css' %}
+
+
+<link href="{{ asset_url }}" rel="stylesheet">
+       {% endstylesheets %}
+#}
+
+       
+{#       {% stylesheets '../app/Resources/less/allqq.less' output='css-compiled/allqq.css' %}
+          <link href="{{ asset_url }}" rel="stylesheet">
+       {% endstylesheets %}#}
+       
+
+
+        <!-- FONTS -->
+        {#    Raleway is imported via CSS  #}
+        {#    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>#}
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700italic,700' rel='stylesheet' type='text/css'>    
+
+{#        <!-- HTML5 Shim and Respond.js add IE8 support of HTML5 elements and media queries -->
+        {% include 'BraincraftedBootstrapBundle::ie8-support.html.twig' %}#}
+
+    {% block extra_css %}{%endblock%}
+
+
+    <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
+    <script src="{{ asset('js/jquery.js') }}"></script>
+    <!-- Include all JavaScripts, compiled by Assetic -->
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
+
+    {#    This extra_head is below jQuery, so that jquery is already loaded.#}
+{% block extra_head %}{%endblock%}
+
+
+</head>
+
+<body>
+
+{% block content %}{%endblock%}
+
+{#        <script src="{{ asset('js/animated-header/classie.js') }}"></script>
+        <script src="{{ asset('js/animated-header/cbpAnimatedHeader.js') }}"></script>
+        <script src="{{ asset('js/parent/animated-header.js') }}"></script>#}
+        
+</body>
+</html>
