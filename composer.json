@@ -4,7 +4,15 @@
     "type": "project",
     "description": "Test symfony template",
     "autoload": {
-        "psr-4": { "": "src/", "SymfonyStandard\\": "app/SymfonyStandard/" }
+        "psr-4": {
+            "": "src/",
+            "SymfonyStandard\\": "app/SymfonyStandard/"
+        }
+    },
+    "autoload-dev" :{
+       "psr-4": {
+            "AppBundle\\Tests\\" : "tests"
+       }
     },
     "repositories" : [
         {
