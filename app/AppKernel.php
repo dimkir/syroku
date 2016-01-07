@@ -31,7 +31,7 @@ class AppKernel extends Kernel
         }
 
         if ( 'test' == $this->getEnvironment()){
-//            $bundles[] = new
+            $bundles[] = new \Liip\FunctionalTestBundle\LiipFunctionalTestBundle();
         }
 
         return $bundles;

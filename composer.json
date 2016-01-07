@@ -48,7 +48,8 @@
         "doctrine/doctrine-fixtures-bundle": "^2.3"
     },
     "require-dev": {
-        "mockery/mockery": "^0.9.4"
+        "mockery/mockery": "^0.9.4",
+        "liip/functional-test-bundle": "^1.2"
     },
     "scripts": {
         "post-root-package-install": [
