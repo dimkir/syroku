@@ -44,11 +44,11 @@
         "jquery/jquery": "^1.11",
         "sensio/generator-bundle": "~2.3",
         "h4cc/alice-fixtures-bundle": "^0.5.1",
-        "doctrine/doctrine-migrations-bundle": "^1.0"
+        "doctrine/doctrine-migrations-bundle": "^1.0",
+        "doctrine/doctrine-fixtures-bundle": "^2.3"
     },
     "require-dev": {
-        "mockery/mockery": "^0.9.4",
-        "doctrine/doctrine-fixtures-bundle": "^2.3"
+        "mockery/mockery": "^0.9.4"
     },
     "scripts": {
         "post-root-package-install": [

@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new Braincrafted\Bundle\BootstrapBundle\BraincraftedBootstrapBundle(),
             new \h4cc\AliceFixturesBundle\h4ccAliceFixturesBundle(),          // we will be executing fixture loading in production
             new \Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(), // we will be executing migrations in production
+            new \Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),     // we will be executing fixture loading in production
             new AppBundle\AppBundle(),
         );
 
@@ -27,6 +28,10 @@ class AppKernel extends Kernel
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
+        }
+
+        if ( 'test' == $this->getEnvironment()){
+//            $bundles[] = new
         }
 
         return $bundles;
