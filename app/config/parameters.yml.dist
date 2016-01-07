@@ -19,3 +19,6 @@ parameters:
     secret:            ThisTokenIsNotSoSecretChangeIt
 
     node_executable:   /usr/bin/node
+
+    monolog_prod_path: "%kernel.logs_dir%/%kernel.environment%.log"
+    
