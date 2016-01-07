@@ -2,6 +2,7 @@
 /app/bootstrap.php.cache
 /app/cache/*
 /app/config/parameters.yml
+/app/config/parameters.backup*.yml
 /app/logs/*
 !app/cache/.gitkeep
 !app/logs/.gitkeep
@@ -10,4 +11,21 @@
 /vendor/
 /bin/
 /composer.phar
-/nbproject/
+nbproject/
+/.idea/
+/web/css-compiled/
+/web/js-compiled/
+/web/compiled-css/
+
+# In our setup only bootstrap and jquery would be copied upon assets:install,
+# thus we we do not need to store anything there.
+/web/js/
+/.vagrant/
+/tmp/
+t
+res
+/web/tests
+/web/app_test.php
+*.*~
+
+
