@@ -45,6 +45,8 @@
         "sensio/generator-bundle": "~2.3"
     },
     "require-dev": {
+        "mockery/mockery": "^0.9.4",
+        "doctrine/doctrine-fixtures-bundle": "^2.3"
     },
     "scripts": {
         "post-root-package-install": [
