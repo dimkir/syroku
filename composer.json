@@ -43,7 +43,8 @@
         "braincrafted/bootstrap-bundle": "^2.1",
         "jquery/jquery": "^1.11",
         "sensio/generator-bundle": "~2.3",
-        "h4cc/alice-fixtures-bundle": "^0.5.1"
+        "h4cc/alice-fixtures-bundle": "^0.5.1",
+        "doctrine/doctrine-migrations-bundle": "^1.0"
     },
     "require-dev": {
         "mockery/mockery": "^0.9.4",

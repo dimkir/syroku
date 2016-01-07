@@ -17,7 +17,8 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Braincrafted\Bundle\BootstrapBundle\BraincraftedBootstrapBundle(),
-            new \h4cc\AliceFixturesBundle\h4ccAliceFixturesBundle(),
+            new \h4cc\AliceFixturesBundle\h4ccAliceFixturesBundle(),          // we will be executing fixture loading in production
+            new \Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(), // we will be executing migrations in production
             new AppBundle\AppBundle(),
         );
 
