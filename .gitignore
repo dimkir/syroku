@@ -20,6 +20,7 @@ nbproject/
 # In our setup only bootstrap and jquery would be copied upon assets:install,
 # thus we we do not need to store anything there.
 /web/js/
+/web/css/
 /.vagrant/
 /tmp/
 t
